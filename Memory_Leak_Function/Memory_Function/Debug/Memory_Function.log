@@ -1,3 +1,0 @@
-﻿  PA1.cpp
-PA1.obj : error LNK2005: "int New1" (?New1@@3HA)이(가) Main.obj에 이미 정의되어 있습니다.
-C:\Users\tmvld\OneDrive\바탕 화면\Memory_Function\Debug\Memory_Function.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
