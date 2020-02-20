@@ -1,7 +1,0 @@
-﻿  Main.cpp
-C:\Users\tmvld\OneDrive\바탕 화면\Overloding_Leak\Overloding_Leak\Main.cpp(67,24): warning C4291: 'void *operator new[](size_t,const char *,int)': 일치하는 operator delete가 없습니다. 초기화할 때 예외가 Throw되지 않으면 메모리가 확보되지 않습니다.
-C:\Users\tmvld\OneDrive\바탕 화면\Overloding_Leak\Overloding_Leak\Main.cpp(21): message : 'operator new[]' 선언을 참조하십시오.
-C:\Users\tmvld\OneDrive\바탕 화면\Overloding_Leak\Overloding_Leak\Main.cpp(68,20): warning C4291: 'void *operator new(size_t,const char *,int)': 일치하는 operator delete가 없습니다. 초기화할 때 예외가 Throw되지 않으면 메모리가 확보되지 않습니다.
-C:\Users\tmvld\OneDrive\바탕 화면\Overloding_Leak\Overloding_Leak\Main.cpp(13): message : 'operator new' 선언을 참조하십시오.
-C:\Users\tmvld\OneDrive\바탕 화면\Overloding_Leak\Overloding_Leak\Main.cpp(69,24): warning C4291: 'void *operator new[](size_t,const char *,int)': 일치하는 operator delete가 없습니다. 초기화할 때 예외가 Throw되지 않으면 메모리가 확보되지 않습니다.
-C:\Users\tmvld\OneDrive\바탕 화면\Overloding_Leak\Overloding_Leak\Main.cpp(21): message : 'operator new[]' 선언을 참조하십시오.
