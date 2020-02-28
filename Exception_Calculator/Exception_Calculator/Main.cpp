@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 #include<iostream>
 #include<windows.h>
 #include<tchar.h>
@@ -22,6 +23,23 @@ int main()
 	return 0;
 }
 
+DWORD ShowMenu()
+{
+	DWORD sei;
+
+	cout << endl;
+	_fputts(_T("-----Menu-----"), stdout);
+	_fputts(_T("num 1 : Divide \n"), stdout);
+	_fputts(_T("num 2 : Multiple \n"), stdout);
+	_fputts(_T("num 3 : Add \n"), stdout);
+	_fputts(_T("num 4 : Minus \n"), stdout);
+	_fputts(_T("num 5 : Exit \n"), stdout);
+	_fputts(_T("Select a Number now :  "), stdout);
+	_tscanf(_T("%d"), &sei);
+
+	return sei;
+}
+
 BOOL Calculator()
 {
 	DWORD sel;
@@ -37,6 +55,7 @@ BOOL Calculator()
 
 	_fputts(_T("Input num1, num2  ="), stdout);
 	_tscanf(_T("%d %d"), &num1, &num2);
+	cout << endl;
 
 	__try
 	{
@@ -66,7 +85,7 @@ BOOL Calculator()
 
 	__except (EXCEPTION_EXECUTE_HANDLER)
 	{
-		_tprintf(_T("Wrong number inserted Maybe.... Try again now !! \n"));
+		_tprintf(_T("Wrong number inserted Maybe.... Try again now !! \n\n"));
 	}
 
 	return TRUE;
