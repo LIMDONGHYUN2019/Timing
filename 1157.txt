@@ -1,0 +1,47 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main()
+{
+    char* ptr = new char[1000000];
+
+	cin >> ptr;
+	getchar();
+	int Pos[26] = { 0, };
+	int max = 0;
+	int Flag = 0;
+	int a;
+	
+	for (int i = 0; i < strlen(ptr); i++)
+	{
+		if (ptr[i] < 91 && ptr[i] > 64)
+		{
+			Pos[ptr[i] - 65] += 1;
+		}
+		else if (ptr[i] > 96 && ptr[i] < 123)
+		{
+			Pos[ptr[i] - 97] += 1;
+		}
+	}
+
+	for (int i = 0; i < 26; i++)
+	{
+		if (max == Pos[i])
+			Flag = Pos[i];
+
+		if (max < Pos[i])
+		{
+			max = Pos[i];
+			a = i;
+		}
+	}
+
+	if (Flag == max)
+		cout << '?' << endl;
+	else
+		cout << (char)(a + 65) << endl;
+
+
+	delete[] ptr;
+}
