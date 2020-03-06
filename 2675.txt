@@ -1,0 +1,28 @@
+#include<iostream>
+#include<cstirng>
+
+using namespace std;
+
+
+int main()
+{
+	int  num;
+	char str[20];
+	cin >> num;
+
+	for (int i = 0; i < num; i++)
+	{
+		int size;
+		cin >> size >> str;
+
+		for (int j = 0; j < strlen(str); j++)
+		{
+			for (int k = 0; k <size; k++)
+			{
+				cout << str[j];
+			}
+		}
+
+		cout << endl;
+	}
+}
